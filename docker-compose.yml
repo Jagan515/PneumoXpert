@@ -1,0 +1,26 @@
+services:
+  pneumonia-detector:
+    build: .
+    image: jagan515/pneumonia-detector:latest
+    ports:
+      - "8501:8501"
+
+    volumes:
+      - ./models:/app/models      # mount models from host (dev)
+      - ./assets:/app/assets
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TF_CPP_MIN_LOG_LEVEL=3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - pneumonia-network
+
+networks:
+  pneumonia-network:
+    driver: bridge
