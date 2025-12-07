@@ -8,8 +8,10 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-FF4B4B.svg)](https://streamlit.io)
 
 PneumoXpert is an intelligent web application for detecting pneumonia from chest X-ray images using deep learning. This project provides a complete end-to-end solution, including model training (with Kaggle integration), a user-friendly [Streamlit](https://streamlit.io/gallery?search=pneumoxpert) interface, Docker containerization, automated CI/CD via GitHub Actions, and planned monitoring capabilities. Built for healthcare screening assistance, it emphasizes accuracy, scalability, and security. Deployed via Streamlit Sharing for easy access.
-![UI](assets/image1.jpg)
-![UI](assets/Figure_1.png)
+
+## World Map Highlighting Pneumonia Hotspots
+![UI](assets/Image2.png)
+
 ##  Quick Access Links
 
 | Resource | Link |
@@ -18,6 +20,9 @@ PneumoXpert is an intelligent web application for detecting pneumonia from chest
 |  **Kaggle Notebook** | [PneumoXpert Training Notebook](https://www.kaggle.com/code/jaganpradhan0/pneumoxpert) |
 |  **DockerHub Image** | [jagan515/pneumonia-detector](https://hub.docker.com/repository/docker/jagan515/pneumonia-detector/general) |
 
+## UI
+
+![UI](assets/image1.jpg)
 
 ##  Features
 
